@@ -96,3 +96,42 @@ main {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* Media queries */
+@media screen and (min-width: 900px) {
+    main {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+
+    .introduction p {
+        padding-left: 22em;
+        padding-right: 22em;
+    }
+
+    .ai-types {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            '  .         teambuilder      .    '
+            'supervisor teambuilder calculator'
+            'supervisor karma calculator'
+            '    .       karma      .     ';
+    }
+
+    .supervisor {
+        grid-area: supervisor;
+    }
+
+    .teambuilder {
+        grid-area: teambuilder;
+    }
+
+    .karma {
+        grid-area: karma;
+    }
+
+    .calculator {
+        grid-area: calculator;
+    }
+}
