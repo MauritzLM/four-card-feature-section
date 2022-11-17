@@ -9,10 +9,13 @@ html {
 
 body {
     font-size: 1.5rem;
+    background-color: hsl(0, 0%, 98%);
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0;
 }
 
 h1::first-line {
@@ -20,11 +23,69 @@ h1::first-line {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+
+h1,
+.introduction p {
+    text-align: center;
 }
 
 p {
-    font-weight: 200;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+h2+p {
+    margin-top: .3em;
+    font-size: 1.28rem;
+}
+
+main {
+    padding: 1.8em;
+}
+
+.ai-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-top: 5em;
+}
+
+.ai-types section {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 7px 7px hsla(229, 6%, 66%, 0.418);
+    border-radius: .4em;
+    padding: 1.5em 1.8em;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.ai-types section img {
+    display: block;
+    align-self: flex-end;
+    height: 50px;
+    width: 50px;
+    margin-top: 1.1em;
+    margin-bottom: .5em;
 }
 
 .attribution {
