@@ -12,6 +12,8 @@ body {
     background-color: hsl(0, 0%, 98%);
 }
 
+/*  Typography  */
+
 h1 {
     font-size: 2.4rem;
     color: hsl(234, 12%, 34%);
@@ -44,6 +46,8 @@ h2+p {
     font-size: 1.28rem;
 }
 
+/*  Layout  */
+
 main {
     padding: 1.8em;
 }
@@ -63,6 +67,8 @@ main {
     border-radius: .4em;
     padding: 1.5em 1.8em;
 }
+
+/*  ai cards  */
 
 .supervisor {
     border-top: 4px solid hsl(180, 62%, 55%);
@@ -87,6 +93,8 @@ main {
     margin-bottom: .5em;
 }
 
+/*  footer  */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -98,6 +106,8 @@ main {
 
 /* Media queries */
 @media screen and (min-width: 1000px) {
+
+    /*  Typography  */
 
     h1 {
         font-size: 3.5rem;
@@ -126,6 +136,8 @@ main {
         margin-left: 8em;
         margin-right: 8em;
     }
+
+    /* ai cards (grid) */
 
     .ai-types {
         display: grid;
